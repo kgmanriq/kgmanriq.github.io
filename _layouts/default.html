@@ -15,6 +15,7 @@
       <div class="sidebar-inner">
         <div class="side-top">
           <a class="side-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          {% include social.html %}
           <nav class="side-nav" aria-label="Site">
             {% for item in site.nav %}
               {% assign active = false %}
@@ -23,7 +24,6 @@
               <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
             {% endfor %}
           </nav>
-          {% include social.html %}
         </div>
         <div class="toc" hidden>
           <p class="toc-title">On This Page</p>
