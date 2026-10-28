@@ -1,0 +1,9 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+{% assign projects = site.projects | sort: "date" | reverse %}
+<h1 class="page-title">Projects</h1>
+<p class="lede">Research, tools, and systems work across public sector technology, data, and AI.</p>
+{% include tiles.html items=projects kind="project" %}

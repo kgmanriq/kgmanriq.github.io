@@ -2,6 +2,7 @@
 layout: post
 title: "Welcome to my blog"
 tags: [intro]
+summary: What this blog will cover, from large-scale system rollouts to AI governance in the public sector.
 ---
 
 This is my first post. I'll be writing here about technology adoption in the public sector, data governance, and what I learn from working with transit agencies, counties, and universities.

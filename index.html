@@ -2,24 +2,41 @@
 layout: default
 title: Home
 ---
-<section class="hero">
-  <p class="eyebrow">Strategy Consultant · {{ site.location }}</p>
-  <h1>Helping public institutions adopt technology that actually works for the people using it.</h1>
-  <p class="lede">I'm Katrina Manrique, a strategy consultant with a decade of experience helping government, transit, utilities, and universities design and adopt complex technology systems.</p>
-  <p class="actions">
-    <a class="button" href="{{ '/resume/' | relative_url }}">View resume</a>
-    <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+{% assign projects = site.projects | sort: "date" | reverse %}
+
+<header class="intro">
+  <h1 class="page-title">Katrina Gacusan Manrique, MPP, PMP</h1>
+  <p class="contact">
+    {{ site.location }} ·
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a> ·
+    <a href="https://www.linkedin.com/in/{{ site.linkedin }}">linkedin.com/in/{{ site.linkedin }}</a>
+  </p>
+</header>
+
+<section>
+  <h2 class="section-title">Overview</h2>
+  <p class="overview">
+    I've spent a decade helping public institutions design, adopt, and govern complex technology systems, from a $1B statewide
+    Salesforce implementation for child welfare to California's first predictive analytics tool mapping climate hazards against
+    social vulnerability, and most recently leading KPMG's first AI strategy engagement in higher education. Across 300+ interviews
+    with public servants in 50+ counties, I've seen how new systems succeed or fail depending on governance, data quality, and
+    whether people trust the tools in front of them. I'm now bringing that experience to AI safety, focusing on how organizations
+    can evaluate, govern, and responsibly deploy AI systems so they serve the public well.
   </p>
 </section>
 
-<section class="stats">
-  <div><strong>300+</strong><span>stakeholder interviews across 50+ California counties</span></div>
-  <div><strong>6</strong><span>industries served in the last three years</span></div>
-  <div><strong>65+</strong><span>AI use cases identified for back-office operations</span></div>
-  <div><strong>50%</strong><span>utilization gain from dashboards built for 8 clinics</span></div>
+<section>
+  <div class="section-head">
+    <h2 class="section-title">Projects</h2>
+    <a class="see-all" href="{{ '/projects/' | relative_url }}">All projects &rarr;</a>
+  </div>
+  {% include tiles.html items=projects limit=3 kind="project" %}
 </section>
 
 <section>
-  <h2 class="section-title">Recent writing</h2>
-  {% include post-list.html limit=3 %}
+  <div class="section-head">
+    <h2 class="section-title">Writing</h2>
+    <a class="see-all" href="{{ '/blog/' | relative_url }}">All posts &rarr;</a>
+  </div>
+  {% include tiles.html items=site.posts limit=3 kind="post" %}
 </section>

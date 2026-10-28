@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+  <p class="eyebrow"><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{% if page.type %}{{ page.type }} · {% endif %}{{ page.date | date: "%B %Y" }}{% if page.tags.size > 0 %} · {{ page.tags | join: ", " }}{% endif %}</p>
+  {% if page.image %}<img class="post-hero" src="{{ page.image | relative_url }}" alt="">{% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

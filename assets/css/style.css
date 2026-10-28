@@ -4,8 +4,8 @@
   --muted: #6b6b6b;
   --faint: #9a9a9a;
   --line: #ececec;
-  --accent: #d30516;
-  --accent-soft: #fdeced;
+  --accent: #1f5fbf;
+  --accent-soft: #eef3fb;
   --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 840px; margin: 0 auto; padding: 0 20px; }
 .muted { color: var(--muted); }
 h1, h2, h3, h4 { line-height: 1.25; letter-spacing: -0.01em; }
 
@@ -55,33 +55,32 @@ main.wrap { padding-top: 56px; padding-bottom: 72px; min-height: 60vh; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
 
 /* Home */
-.hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.5rem); font-weight: 700; letter-spacing: -0.025em; margin: 0 0 18px; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 56px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.stats div { padding: 22px 16px 22px 0; }
-.stats div + div { padding-left: 16px; border-left: 1px solid var(--line); }
-.stats strong { display: block; font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; color: var(--accent); }
-.stats span { display: block; font-size: .82rem; line-height: 1.45; color: var(--muted); margin-top: 4px; }
-@media (max-width: 600px) {
-  .stats { grid-template-columns: 1fr 1fr; }
-  .stats div { padding: 18px 12px 18px 0; }
-  .stats div:nth-child(3) { padding-left: 0; border-left: 0; }
-  .stats div:nth-child(n+3) { border-top: 1px solid var(--line); }
-}
+.intro { padding-bottom: 4px; }
+.overview { font-size: 1.05rem; margin: 0; }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.section-head .section-title { margin-bottom: 20px; }
+.see-all { font-size: .9rem; font-weight: 600; white-space: nowrap; }
 
-/* Post list */
-.post-item { padding: 0 0 36px; margin-bottom: 36px; border-bottom: 1px solid var(--line); }
-.post-item:last-child { border-bottom: 0; }
-.post-title { font-size: 1.5rem; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.02em; }
-.post-title a { color: var(--text); }
-.post-title a:hover { color: var(--accent); text-decoration: none; }
-.post-date { color: var(--faint); font-size: .88rem; margin: 0 0 14px; }
-.post-thumb { display: block; width: 100%; border-radius: 8px; margin-bottom: 16px; }
-.post-excerpt { color: var(--muted); margin: 0 0 10px; }
-.read-more { font-size: .92rem; font-weight: 600; }
+/* Tiles */
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 760px) { .tiles { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .tiles { grid-template-columns: 1fr; } }
+.tile { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; color: var(--text); background: #fff; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.tile:hover { text-decoration: none; border-color: var(--accent); box-shadow: 0 6px 20px rgba(31, 95, 191, .10); transform: translateY(-2px); }
+.tile-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
+.tile-body { padding: 18px; display: flex; flex-direction: column; flex: 1; }
+.tile-meta { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin: 0 0 8px; }
+.tile-title { font-size: 1.05rem; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.01em; }
+.tile:hover .tile-title { color: var(--accent); }
+.tile-text { font-size: .9rem; line-height: 1.55; color: var(--muted); margin: 0; flex: 1; }
+.tile-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; }
+.tile-tags .tag { font-size: .75rem; padding: 2px 9px; }
 
 /* Single post */
 .post h1 { font-size: clamp(1.9rem, 5vw, 2.4rem); font-weight: 700; letter-spacing: -0.025em; margin: 0 0 8px; }
 .meta { color: var(--faint); font-size: .9rem; margin: 0 0 36px; }
+.post-hero { width: 100%; border-radius: 10px; margin-bottom: 28px; }
+.prose { max-width: 700px; }
 .prose h2 { font-size: 1.35rem; margin-top: 2.2em; }
 .prose h3 { font-size: 1.1rem; margin-top: 1.8em; }
 .prose img { max-width: 100%; border-radius: 8px; }

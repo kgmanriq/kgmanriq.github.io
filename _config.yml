@@ -2,7 +2,7 @@ title: Katrina Manrique
 description: >-
   Strategy consultant helping public interest and capital-intensive organizations
   design, adopt, and manage complex technology systems.
-tagline: Strategy, public sector technology, and data
+tagline: Public sector technology, data, and AI safety
 author: Katrina Gacusan Manrique
 email: kgmanriq@gmail.com
 linkedin: kgmanriq
@@ -17,9 +17,20 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope: { type: projects }
+    values: { layout: project }
+
 nav:
   - title: Home
     url: /
+  - title: Projects
+    url: /projects/
   - title: Resume
     url: /resume/
   - title: Blog
