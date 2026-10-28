@@ -11,7 +11,7 @@
   --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --col: 720px;
   --note: 230px;
-  --gap: 64px;
+  --gap: 40px;
 }
 
 * { box-sizing: border-box; }
@@ -38,7 +38,8 @@ p { margin: 0 0 1.1em; }
 /* ---------- Layout ---------- */
 .layout {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(0, var(--col)) minmax(var(--note), 1fr);
+  grid-template-columns: 200px minmax(0, var(--col)) var(--note);
+  justify-content: center;
   column-gap: var(--gap);
   padding: 0 48px;
 }
@@ -136,7 +137,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Responsive ---------- */
 /* Medium: no margin column; notes sit inline under their heading */
 @media (max-width: 1180px) {
-  .layout { grid-template-columns: 190px minmax(0, 1fr); column-gap: 48px; padding: 0 36px; }
+  .layout { grid-template-columns: 180px minmax(0, 1fr); column-gap: 36px; padding: 0 32px; justify-content: start; }
   .content { max-width: var(--col); }
   .with-note .sidenote { position: static; margin: -10px 0 16px; }
   .job .sidenote { margin: 0 0 2px; }
