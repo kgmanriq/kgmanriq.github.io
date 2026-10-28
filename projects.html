@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 {% assign projects = site.projects | sort: "date" | reverse %}
-<h1 class="page-title">Projects</h1>
-<p class="lede">Research, tools, and systems work across public sector technology, data, and AI.</p>
+<header class="page-head">
+  <h1>Projects</h1>
+  <p class="subtitle">Research, tools, and systems work.</p>
+</header>
 {% include tiles.html items=projects kind="project" %}

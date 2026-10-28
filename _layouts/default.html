@@ -11,36 +11,65 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <div class="masthead">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <span class="tagline">{{ site.tagline }}</span>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="side-top">
+          <a class="side-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <nav class="side-nav" aria-label="Site">
+            {% for item in site.nav %}
+              {% assign active = false %}
+              {% if item.url == '/' and page.url == '/' %}{% assign active = true %}
+              {% elsif item.url != '/' and page.url contains item.url %}{% assign active = true %}{% endif %}
+              <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+        <div class="toc" hidden>
+          <p class="toc-title">On This Page</p>
+          <ol></ol>
+        </div>
       </div>
-      <nav>
-        {% for item in site.nav %}
-          {% assign active = false %}
-          {% if item.url == '/' and page.url == '/' %}{% assign active = true %}
-          {% elsif item.url != '/' and page.url contains item.url %}{% assign active = true %}{% endif %}
-          <a href="{{ item.url | relative_url }}"{% if active %} class="active"{% endif %}>{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-  </header>
+    </aside>
 
-  <main class="wrap">
-    {{ content }}
-  </main>
+    <main class="content">
+      {{ content }}
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}</span>
-      <span class="links">
-        <a href="mailto:{{ site.email }}">Email</a>
-        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
-        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-      </span>
-    </div>
-  </footer>
+      <footer class="site-footer">
+        <span>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}</span>
+        <span class="links">
+          <a href="mailto:{{ site.email }}">Email</a>
+          <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
+          <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        </span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Builds the "On This Page" list from the page's section headings and highlights the one in view.
+    (function () {
+      var heads = Array.prototype.slice.call(document.querySelectorAll('.content h2[id]'));
+      if (heads.length < 2) return;
+      var toc = document.querySelector('.toc'), list = toc.querySelector('ol'), links = {};
+      heads.forEach(function (h) {
+        var li = document.createElement('li'), a = document.createElement('a');
+        a.href = '#' + h.id; a.textContent = h.textContent;
+        li.appendChild(a); list.appendChild(li); links[h.id] = a;
+      });
+      toc.hidden = false;
+      if (!('IntersectionObserver' in window)) return;
+      var current = links[heads[0].id]; current.classList.add("active");
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            if (current) current.classList.remove('active');
+            current = links[e.target.id]; current.classList.add('active');
+          }
+        });
+      }, { rootMargin: '0px 0px -70% 0px' });
+      heads.forEach(function (h) { io.observe(h); });
+    })();
+  </script>
 </body>
 </html>
