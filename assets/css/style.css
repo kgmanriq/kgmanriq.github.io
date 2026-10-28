@@ -163,3 +163,10 @@ p { margin: 0 0 1.1em; }
   body { background: #fff; font-size: 10.5pt; }
   .sidenote { float: none; width: auto; margin: 0 0 8px; }
 }
+
+/* ---------- Dotted-leader lists (title ...... detail) ---------- */
+.content ul.leaders { list-style: none; padding: 0; margin: 0; }
+.leaders li { display: flex; align-items: baseline; gap: 18px; margin: 0 0 6px; }
+.leaders li > a, .leaders li > span:first-child { flex: 0 1 auto; min-width: 0; }
+.leaders .leader { flex: 1 1 24px; border-bottom: 1px dashed #d4d4d0; transform: translateY(-5px); }
+.leaders .leader-right { flex: 0 0 auto; color: var(--muted); white-space: nowrap; }
