@@ -10,6 +10,9 @@ url: "https://kgmanriq.github.io"
 baseurl: ""
 
 markdown: kramdown
+permalink: /writing/:title/
+future: true
+timezone: America/Los_Angeles
 plugins:
   - jekyll-seo-tag
 
