@@ -52,6 +52,7 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Sidebar ---------- */
 .side-name { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; text-decoration: none; display: block; margin-bottom: 12px; }
+.side-pronouns { font-family: var(--sans); font-size: .82rem; color: var(--faint); margin: -10px 0 14px; }
 .side-name:hover { color: var(--text); }
 .side-nav { display: flex; flex-direction: column; gap: 6px; font-family: var(--sans); font-size: .9rem; }
 .side-nav a { color: var(--faint); text-decoration: none; width: fit-content; }

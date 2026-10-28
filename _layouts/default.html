@@ -15,6 +15,7 @@
       <div class="sidebar-inner">
         <div class="side-top">
           <a class="side-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          {% if site.pronouns %}<p class="side-pronouns">{{ site.pronouns }}</p>{% endif %}
           {% include social.html %}
           <nav class="side-nav" aria-label="Site">
             {% for item in site.nav %}
