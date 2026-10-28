@@ -16,6 +16,21 @@ timezone: America/Los_Angeles
 plugins:
   - jekyll-seo-tag
 
+# Social icons in the sidebar (icon: linkedin, github, scholar, or substack).
+social:
+  - name: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/kgmanriq/
+  - name: GitHub
+    icon: github
+    url: https://github.com/kgmanriq
+  - name: Google Scholar
+    icon: scholar
+    url: https://scholar.google.com/citations?user=H29iaLoAAAAJ&hl=en
+  - name: Substack
+    icon: substack
+    url: https://kgmanriq.substack.com
+
 # Pages listed in the sidebar. Add entries here as you create new pages.
 nav:
   - title: Home

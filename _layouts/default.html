@@ -23,6 +23,7 @@
               <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
             {% endfor %}
           </nav>
+          {% include social.html %}
         </div>
         <div class="toc" hidden>
           <p class="toc-title">On This Page</p>

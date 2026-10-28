@@ -170,3 +170,10 @@ p { margin: 0 0 1.1em; }
 .leaders li > a, .leaders li > span:first-child { flex: 0 1 auto; min-width: 0; }
 .leaders .leader { flex: 1 1 24px; border-bottom: 1px dashed #d4d4d0; transform: translateY(-5px); }
 .leaders .leader-right { flex: 0 0 auto; color: var(--muted); white-space: nowrap; }
+
+/* ---------- Social icons (sidebar) ---------- */
+.social { list-style: none; display: flex; gap: 14px; padding: 0; margin: 22px 0 0; }
+.social a { display: block; color: var(--faint); text-decoration: none; transition: color .15s, transform .15s; }
+.social a:hover { color: var(--accent); transform: translateY(-1px); }
+.social svg { width: 17px; height: 17px; display: block; fill: currentColor; }
+@media (max-width: 760px) { .social { margin-top: 14px; } }
