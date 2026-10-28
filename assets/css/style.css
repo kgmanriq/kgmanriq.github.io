@@ -7,8 +7,8 @@
   --line: #e8e8e5;
   --accent: #1f5fbf;
   --accent-soft: #edf2fa;
-  --serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --col: 640px;
   --note: 230px;
   --gap: 64px;
@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 400 18px/1.65 var(--serif);
+  font: 400 17px/1.7 var(--serif);
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -67,7 +67,7 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Page header & headings ---------- */
 .page-head { margin-bottom: 44px; }
-.page-head h1 { font-family: var(--serif); font-weight: 700; letter-spacing: -0.02em; font-size: 1.85rem; line-height: 1.2; margin: 0 0 4px; }
+.page-head h1 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.03em; font-size: 1.85rem; line-height: 1.2; margin: 0 0 4px; }
 .subtitle { font-family: var(--sans); color: var(--muted); font-size: 1.05rem; margin: 0; }
 .subtitle a { text-decoration-color: #d0d0d0; }
 
@@ -143,7 +143,7 @@ p { margin: 0 0 1.1em; }
 }
 /* Small: sidebar becomes a top bar */
 @media (max-width: 760px) {
-  body { font-size: 17px; }
+  body { font-size: 16px; }
   .layout { display: block; padding: 0 20px; }
   .sidebar-inner { position: static; height: auto; padding: 24px 0 0; display: block; }
   .side-name { margin-bottom: 8px; }
