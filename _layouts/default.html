@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  {% feed_meta %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
@@ -37,7 +36,6 @@
         <span class="links">
           <a href="mailto:{{ site.email }}">Email</a>
           <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
-          <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
         </span>
       </footer>
     </main>

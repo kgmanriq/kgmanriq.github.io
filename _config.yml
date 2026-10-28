@@ -1,8 +1,6 @@
 title: Katrina Manrique
 description: >-
-  Strategy consultant helping public interest and capital-intensive organizations
-  design, adopt, and manage complex technology systems.
-tagline: Public sector technology, data, and AI safety
+  Strategy consultant bringing a decade of public sector technology experience to AI safety.
 author: Katrina Gacusan Manrique
 email: kgmanriq@gmail.com
 linkedin: kgmanriq
@@ -11,30 +9,14 @@ location: Los Angeles, CA
 url: "https://kgmanriq.github.io"
 baseurl: ""
 
-permalink: /blog/:year/:month/:title/
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
-defaults:
-  - scope: { type: projects }
-    values: { layout: project }
-
+# Pages listed in the sidebar. Add entries here as you create new pages.
 nav:
   - title: Home
     url: /
-  - title: Projects
-    url: /projects/
-  - title: Resume
-    url: /resume/
-  - title: Blog
-    url: /blog/
 
 exclude:
   - README.md

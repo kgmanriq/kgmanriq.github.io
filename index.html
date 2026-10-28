@@ -2,8 +2,6 @@
 layout: default
 title: Home
 ---
-{% assign projects = site.projects | sort: "date" | reverse %}
-
 <header class="page-head">
   <h1>Katrina Gacusan Manrique, MPP, PMP</h1>
   <p class="subtitle">
@@ -20,26 +18,4 @@ title: Home
   with public servants in 50+ counties, I've seen how new systems succeed or fail depending on governance, data quality, and
   whether people trust the tools in front of them. I'm now bringing that experience to AI safety, focusing on how organizations
   can evaluate, govern, and responsibly deploy AI systems so they serve the public well.
-</p>
-
-<div class="with-note">
-  <h2 id="projects">Projects</h2>
-  <p class="sidenote">See every project <a href="{{ '/projects/' | relative_url }}">here</a>.</p>
-</div>
-{% include tiles.html items=projects limit=3 kind="project" %}
-
-<div class="with-note">
-  <h2 id="writing">Writing</h2>
-  <p class="sidenote">All posts are <a href="{{ '/blog/' | relative_url }}">here</a>.</p>
-</div>
-{% include tiles.html items=site.posts limit=3 kind="post" %}
-
-<div class="with-note">
-  <h2 id="resume">Resume</h2>
-  <p class="sidenote">Prefer a PDF? <a href="{{ '/assets/files/Katrina_Manrique_Resume.pdf' | relative_url }}" download>Download it</a>.</p>
-</div>
-<p>
-  Currently an Associate in KPMG's Strategy, Infrastructure and Capital Advisory practice. Previously a David Bohnett Leadership
-  Fellow at the Los Angeles County Board of Supervisors and a graduate research intern at the California Governor's Office of
-  Land Use and Innovation. MPP from USC. Full work history is on the <a href="{{ '/resume/' | relative_url }}">resume page</a>.
 </p>
