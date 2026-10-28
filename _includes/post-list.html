@@ -2,15 +2,17 @@
 {% if site.posts.size == 0 %}
   <p class="muted">No posts yet.</p>
 {% else %}
-<ul class="post-list">
+<div class="post-list">
   {% for post in site.posts limit: limit %}
-  <li>
-    <a href="{{ post.url | relative_url }}">
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <span class="post-title">{{ post.title }}</span>
-      {% if post.excerpt %}<span class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</span>{% endif %}
-    </a>
-  </li>
+  <article class="post-item">
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-date">{{ post.date | date: "%-d %b %Y" }}</p>
+    {% if post.image %}
+      <a href="{{ post.url | relative_url }}"><img class="post-thumb" src="{{ post.image | relative_url }}" alt=""></a>
+    {% endif %}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+  </article>
   {% endfor %}
-</ul>
+</div>
 {% endif %}
