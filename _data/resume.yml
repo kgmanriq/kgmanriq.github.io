@@ -1,0 +1,179 @@
+# Edit this file to update your resume page. The layout reads everything from here.
+
+name: Katrina Gacusan Manrique, MPP, PMP
+website: kgmanriq.com
+
+overview:
+  - >-
+    Katrina Manrique is a strategy consultant with a decade of experience helping public interest and
+    capital-intensive organizations safely design, adopt, and manage complex technology systems. She has
+    worked across six industries within the last three years including state and local government, public
+    transit, power and utilities, port authorities, and higher education institutions.
+  - >-
+    She has contributed to first-of-their-kind solutions at significant scale, including a $1B statewide
+    Salesforce implementation and California's first predictive analytics tool mapping climate impacts
+    against social vulnerability. Prior work at the Los Angeles County Board of Supervisors, San Francisco
+    Board of Supervisors, California Governor's Office of Land Use and Innovation, and California's
+    Behavioral Health Services Oversight and Accountability Commission grounds her understanding of how
+    public servants adopt and use technology.
+
+highlights:
+  - label: System Requirements
+    text: >-
+      Defined the business requirements guiding configuration of a $1B software platform and assessed 70+
+      external systems for integration. Identified 65+ use cases for AI adoption in back-office operations.
+  - label: Stakeholder Engagement and User Testing
+    text: >-
+      Conducted 300+ interviews and working sessions with public servants across 50+ California counties,
+      including 100+ rural and tribal stakeholders, to inform system design.
+  - label: Data and Analytics
+    text: >-
+      Built 20+ data dashboards for eight behavioral health clinics, increasing utilization and productivity
+      by 50 percent. Established a data governance program at a state transportation agency to strengthen
+      quality and reliability of workforce data tied to recruitment, retention, and hiring.
+  - label: Process Improvement
+    text: >-
+      Identified 35 process improvements across four county departments, drawing on stakeholder interviews
+      and benchmarking against 20 peer counties. Designed the first project management office within a state
+      transportation agency, overseeing more than $60M in clean energy initiatives.
+
+experience:
+  - org: KPMG
+    team: Strategy, Infrastructure and Capital Advisory
+    role: Associate
+    dates: October 2023 – Present
+    location: Los Angeles, CA
+    summary: >-
+      Delivered 15+ technology and operational engagements by identifying process bottlenecks, retraining
+      teams, and setting up data-tracking metrics, to modernize legacy workflows across six industries
+      including transit, power and utilities, health and human services, and higher education.
+    groups:
+      - name: System Design & Implementation
+        items:
+          - title: $1B+ Salesforce System Implementation for $50B State Child Welfare Agency
+            text: >-
+              Defined 80+ system requirements across the child welfare lifecycle by testing user adoption and
+              mapping how 50+ counties administer core processes, to standardize a statewide technology
+              platform. Evaluated the functionality of 70+ internal and commercial systems by identifying
+              functional overlap with the new statewide solution, improve adoption of statewide solution,
+              capture additional functionality, and decommission legacy external systems.
+          - title: AI Use Case Development for Private 15K+ Student Online University
+            text: >-
+              Led the US firm's first AI strategy engagement in higher education by translating pain points
+              across 4 user groups (e.g., students, faculty, advisors, and staff) into 20+ prioritized use
+              cases covering the student lifecycle to drive university-wide AI adoption.
+      - name: Strategic Planning & Process Improvement
+        items:
+          - title: Merger & Acquisition Feasibility Study for Private Universities
+            text: >-
+              Modeled 3 possible merger scenarios by evaluating qualitative and quantitative administrative,
+              academic, IT, and real estate data across 2 private institutions, to measure the risks and
+              benefits of a potential merger before formal due diligence.
+          - title: Operational & Organizational Assessment for $850B+ County Government
+            text: >-
+              Identified 35 service and customer experience improvements by interviewing 100+ stakeholders,
+              benchmarking 20 peer counties, and designing a phased implementation plan, to upgrade delivery
+              across 4 county departments.
+          - title: Project Management Office Stand-Up for $3B+ State Transportation Agency
+            text: >-
+              Designed a future-state operating model for $60M+ in clean energy initiatives by synthesizing
+              feedback from 10+ stakeholders and benchmarking 3 state transportation agencies into 11
+              recommendations, to improve statewide performance and technology enablement.
+      - name: Data Analytics & Governance
+        items:
+          - title: PowerBI Performance Tracking Dashboard for $120M+ County Outpatient Program
+            text: >-
+              Increased staff utilization by 50% across 8 behavioral health clinics by building 16 Power BI
+              dashboards tracking 15 KPIs and coaching 10 managers overseeing 160 employees, and secure $8M in
+              projected cost savings.
+          - title: Data Governance Stand-Up & PowerBI Dashboard Enhancements for $8B+ State Transportation Agency
+            text: >-
+              Built the agency's first data governance program by partnering with 10+ business owners to trace
+              data lineage for 100+ critical data elements in Databricks, to resolve the root causes of
+              workforce data quality issues. Deployed technical enhancements for 3 enterprise workforce
+              dashboards by converting feedback from 60+ stakeholders into specific vendor requirements and
+              creating training materials, to improve system usability and data adoption.
+      - name: Regulatory Compliance, Reporting, & Risk Management
+        items:
+          - title: Programmatic Reporting for $200B+ Capital Expansion Program
+            text: >-
+              Published 7+ monthly progress reports for a major US transit expansion by coordinating and
+              validating cost, schedule, risk, and milestone data across 20+ capital projects, to provide
+              transparent project updates to the Board and the Federal Transit Administration.
+          - title: Enterprise Governance Strategy & Operating Model Design for $3B Regional Transit Agency
+            text: >-
+              Developed the agency's first 5-year Agency Controls strategy and 2 operating frameworks to
+              standardize agency governance and controls. Mapped decision rights across 15+ governing bodies
+              and reconciled 20+ definitions against the business glossary, exposing gaps in authority and
+              strengthen maturity of agency governance.
+    closing:
+      - >-
+        Expanded the US firm's higher education practice by advancing 4 core service offerings to strengthen
+        market presence, co-authoring 5 thought leadership pieces, and training 200+ professionals through 15+
+        knowledge sharing sessions, to scale business development and internal knowledge sharing.
+
+  - org: Los Angeles County Board of Supervisors
+    team: Supervisorial District 2
+    role: David Bohnett Leadership Fellow
+    dates: January 2022 – December 2022
+    location: Los Angeles, CA
+    bullets:
+      - >-
+        Accelerated hiring process for the nation's second-largest municipal health system by authoring a
+        board motion that translated workforce data into clear policy directives and a mandatory tracking
+        dashboard, to resolve a 17K+ health worker shortage.
+      - >-
+        Designed a pilot program to address a 1,300% disease increase by translating public health research
+        into clear policy options and building cross-agency alignment, to secure county board approval for the
+        health interventions.
+
+  - org: California Governor's Office of Land Use and Innovation
+    team: Climate Equity and Resilience
+    role: Graduate Research Intern
+    dates: June 2021 – December 2021
+    location: Sacramento, CA
+    bullets:
+      - >-
+        Co-developed California's first predictive analytics tool for climate hazards on vulnerable populations
+        by standardizing data across 15 separate platforms and aligning 50 experts from 24 state agencies to
+        align on common methodology and dashboard design.
+      - >-
+        Increased adoption of the Climate Vulnerability Map across 100+ rural and tribal stakeholders by
+        facilitating 2 statewide listening sessions and synthesizing 15+ hours of user input, to identify and
+        remove key user experience barriers.
+
+publications:
+  - title: "GenAI in Public Institutions of Higher Education: Four Steps to Help Turn Disruption into Advantage"
+    text: >-
+      Identified key barriers to GenAI adoption in public higher education, highlighting that only ~13% of
+      universities have formal AI policies and outlining risks, governance principles, and operating model
+      changes needed to support implementation, by synthesizing research and stakeholder insights into
+      published thought leadership.
+  - title: "Community Engagement in AB 617: An Evaluation of Challenges, Successes, Lessons Learned, and Recommendations for the Future"
+    text: >-
+      Co-authored a state-commissioned evaluation of California's Community Air Monitoring Program by
+      analyzing 70+ interviews across 10 pilot communities to assess whether local resident input was
+      successfully incorporated into policy design and execution. The report was widely cited by national
+      think tanks including Brookings Institute and the Center for American Progress.
+
+education:
+  - school: University of Southern California
+    degree: Master of Public Policy; Certificate in Business Analytics (GPA 3.99)
+    dates: May 2023
+    location: Los Angeles, CA
+    awards: >-
+      David Bohnett Leadership Fund ($20K), Asian Pacific Alumni Association Scholar ($4K), Golden Belt
+      Community Foundation Scholarship ($2K)
+  - school: University of California, Davis
+    degree: Bachelor of Arts in History, English
+    dates: June 2020
+    location: Davis, CA
+    awards: >-
+      Associated Students of UC Davis Scholarship ($500); Citation for Outstanding Performance; Prytanean
+      Women's Honor Society; Sigma Tau Delta English Honor Society
+
+skills:
+  - label: Programs
+    items: [R, Python, STATA, NVivo, Qualtrics, Tableau, PowerBI, Salesforce, Jira]
+  - label: Certifications
+    items: [Project Management Professional (PMP), Certified Associate in Project Management (CAPM)]

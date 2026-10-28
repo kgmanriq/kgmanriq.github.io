@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <p class="eyebrow">Strategy Consultant · {{ site.location }}</p>
+  <h1>Helping public institutions adopt technology that actually works for the people using it.</h1>
+  <p class="lede">I'm Katrina Manrique, MPP, PMP. For a decade I've helped public interest and capital-intensive organizations design, adopt, and manage complex technology systems, from a $1B statewide Salesforce implementation to California's first predictive analytics tool mapping climate impacts against social vulnerability.</p>
+  <p class="actions">
+    <a class="button" href="{{ '/resume/' | relative_url }}">View resume</a>
+    <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+  </p>
+</section>
+
+<section class="stats">
+  <div><strong>300+</strong><span>stakeholder interviews across 50+ California counties</span></div>
+  <div><strong>6</strong><span>industries served in the last three years</span></div>
+  <div><strong>65+</strong><span>AI use cases identified for back-office operations</span></div>
+  <div><strong>50%</strong><span>utilization gain from dashboards built for 8 clinics</span></div>
+</section>
+
+<section>
+  <h2 class="section-title">Recent writing</h2>
+  {% include post-list.html limit=3 %}
+</section>

@@ -1,0 +1,31 @@
+title: Katrina Manrique
+description: >-
+  Strategy consultant helping public interest and capital-intensive organizations
+  design, adopt, and manage complex technology systems.
+author: Katrina Gacusan Manrique
+email: kgmanriq@gmail.com
+linkedin: kgmanriq
+location: Los Angeles, CA
+
+url: "https://kgmanriq.github.io"
+baseurl: ""
+
+permalink: /blog/:year/:month/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+nav:
+  - title: Home
+    url: /
+  - title: Resume
+    url: /resume/
+  - title: Blog
+    url: /blog/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
