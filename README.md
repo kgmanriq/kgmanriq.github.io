@@ -24,11 +24,28 @@ Live at **https://kgmanriq.github.io**.
 - Text: edit `_data/resume.yml`. Every section of the resume page is pulled from there.
 - PDF download: replace `assets/files/Katrina_Manrique_Resume.pdf` with a new file of the same name.
 
+## Add a project
+
+Add a file to `_projects` (e.g. `my-project.md`) starting with:
+
+```
+---
+title: "Project name"
+type: Publication        # small label shown on the tile
+date: 2026-11-01         # newest projects show first on the home page
+summary: One sentence shown on the tile.
+tags: [AI governance]
+---
+```
+
+Optional: `image: /assets/images/photo.jpg` adds a picture to the tile (works on blog posts too).
+
 ## Other things to edit
 
-- Name, email, LinkedIn, nav links: `_config.yml`
-- Home page intro and stats: `index.html`
+- Name, email, LinkedIn, sidebar links: `_config.yml`
+- Home page overview and margin notes: `index.html`
 - Colors and fonts: `assets/css/style.css` (the variables at the top)
+- Any `## Heading` in a post or project automatically appears in the sidebar's "On This Page" list.
 
 ## Preview locally (optional)
 
