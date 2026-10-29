@@ -9,7 +9,7 @@
   --accent-soft: #edf2fa;
   --serif: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --body: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --col: 720px;
   --note: 230px;
   --gap: 40px;
@@ -21,7 +21,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 400 16px/1.75 var(--body);
+  font: 400 17px/1.7 var(--body);
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -146,7 +146,7 @@ p { margin: 0 0 1.1em; }
 }
 /* Small: sidebar becomes a top bar */
 @media (max-width: 760px) {
-  body { font-size: 14.5px; }
+  body { font-size: 16px; }
   .layout { display: block; padding: 0 20px; }
   .sidebar-inner { position: static; height: auto; padding: 24px 0 0; display: block; }
   .side-name { margin-bottom: 8px; }
