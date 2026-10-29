@@ -14,6 +14,7 @@
     <aside class="sidebar">
       <div class="sidebar-inner">
         <div class="side-top">
+          {% include avatar.html %}
           <a class="side-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
           {% if site.pronouns %}<p class="side-pronouns">{{ site.pronouns }}</p>{% endif %}
           {% include social.html %}
@@ -69,6 +70,37 @@
         });
       }, { rootMargin: '0px 0px -70% 0px' });
       heads.forEach(function (h) { io.observe(h); });
+    })();
+
+    // Avatar eyes follow the cursor.
+    (function () {
+      var svg = document.querySelector('.avatar svg');
+      if (!svg) return;
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var pupils = Array.prototype.slice.call(svg.querySelectorAll('.pupil'));
+      var MAX_X = 20, MAX_UP = 6, MAX_DOWN = 9;          // travel limits, in artwork units
+      var target = { x: 0, y: 0 }, pos = { x: 0, y: 0 }, running = false;
+
+      function aim(clientX, clientY) {
+        var r = svg.getBoundingClientRect(), s = r.width / 900;
+        // Aim from the midpoint between the eyes.
+        var ex = r.left + 497 * s, ey = r.top + 407 * s;
+        var dx = clientX - ex, dy = clientY - ey, d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var reach = Math.min(1, d / 250);                // full travel once the cursor is ~250px away
+        target.x = (dx / d) * MAX_X * reach;
+        target.y = (dy / d) * (dy > 0 ? MAX_DOWN : MAX_UP) * reach;
+        if (!running) { running = true; requestAnimationFrame(step); }
+      }
+      function step() {
+        pos.x += (target.x - pos.x) * 0.2; pos.y += (target.y - pos.y) * 0.2;
+        var t = 'translate(' + pos.x.toFixed(2) + ' ' + pos.y.toFixed(2) + ')';
+        pupils.forEach(function (p) { p.setAttribute('transform', t); });
+        if (Math.abs(target.x - pos.x) > 0.05 || Math.abs(target.y - pos.y) > 0.05) requestAnimationFrame(step);
+        else running = false;
+      }
+      document.addEventListener('mousemove', function (e) { aim(e.clientX, e.clientY); }, { passive: true });
+      document.addEventListener('touchstart', function (e) { var t = e.touches[0]; aim(t.clientX, t.clientY); }, { passive: true });
+      document.documentElement.addEventListener('mouseleave', function () { target.x = 0; target.y = 0; if (!running) { running = true; requestAnimationFrame(step); } });
     })();
   </script>
 </body>

@@ -1,0 +1,17 @@
+{%- comment -%}
+  Sidebar avatar whose eyes follow the cursor.
+  The PNG has its pupils painted out; the two circles below are drawn on top and moved by script.
+  Coordinates are in the avatar's 900x900 artwork space.
+{%- endcomment -%}
+<a class="avatar" href="{{ '/' | relative_url }}" aria-label="Home">
+  <img src="{{ '/assets/images/avatar.png' | relative_url }}" alt="Illustrated portrait of Katrina" width="480" height="480">
+  <svg viewBox="0 0 900 900" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Each eye: the area just below the eyelid line, so pupils tuck under the lid. -->
+      <clipPath id="eye-left"><polygon points="346,398.2 428,407.3 428,470 346,470"/></clipPath>
+      <clipPath id="eye-right"><polygon points="552,403.8 652,408 652,470 552,470"/></clipPath>
+    </defs>
+    <g clip-path="url(#eye-left)"><circle class="pupil" cx="388" cy="405" r="22"/></g>
+    <g clip-path="url(#eye-right)"><circle class="pupil" cx="607" cy="409" r="22"/></g>
+  </svg>
+</a>
