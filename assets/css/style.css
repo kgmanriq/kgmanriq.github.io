@@ -7,8 +7,8 @@
   --line: #e8e8e5;
   --accent: #1f5fbf;
   --accent-soft: #edf2fa;
-  --serif: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --sans: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
   --body: "Source Serif 4", Georgia, "Times New Roman", serif;
   --col: 720px;
   --note: 230px;
@@ -70,7 +70,7 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Page header & headings ---------- */
 .page-head { margin-bottom: 44px; }
-.page-head h1 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.03em; font-size: 1.85rem; line-height: 1.2; margin: 0 0 4px; }
+.page-head h1 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.02em; font-size: 1.75rem; line-height: 1.2; margin: 0 0 4px; }
 .subtitle { font-family: var(--sans); color: var(--muted); font-size: 1.05rem; margin: 0; }
 .subtitle a { text-decoration-color: #d0d0d0; }
 
