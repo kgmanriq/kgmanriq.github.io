@@ -194,10 +194,12 @@ p { margin: 0 0 1.1em; }
 .mdr .mdr-ch { display: inline-block; transform-origin: 50% 60%; will-change: transform; }
 
 /* ---------- Dog illustration (bottom-right corner) ---------- */
-.dog { position: fixed; right: 28px; bottom: 20px; width: 200px; height: auto; pointer-events: none; z-index: 1; }
+.dog { position: fixed; bottom: 24px; width: 150px; height: auto; pointer-events: none; z-index: 1;
+  /* Sit just right of the main column rather than out at the window edge. */
+  left: min(calc(50% + 374px), calc(100% - 294px)); }
 /* Narrower screens: no empty margin to sit in, so it rests at the end of the page instead of covering text. */
 @media (max-width: 1180px) {
-  .dog { position: static; display: block; width: 160px; margin: 56px 0 -40px auto; }
+  .dog { position: static; display: block; width: 140px; margin: 56px 0 -40px auto; }
 }
-@media (max-width: 760px) { .dog { width: 130px; } }
+@media (max-width: 760px) { .dog { width: 120px; } }
 @media print { .dog { display: none; } }
