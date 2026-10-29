@@ -192,3 +192,12 @@ p { margin: 0 0 1.1em; }
 .page-head h1.mdr { line-height: 1.3; text-wrap: balance; letter-spacing: 0.05em; word-spacing: 0.15em; }
 .mdr .mdr-word { display: inline-block; white-space: nowrap; }
 .mdr .mdr-ch { display: inline-block; transform-origin: 50% 60%; will-change: transform; }
+
+/* ---------- Dog illustration (bottom-right corner) ---------- */
+.dog { position: fixed; right: 28px; bottom: 20px; width: 200px; height: auto; pointer-events: none; z-index: 1; }
+/* Narrower screens: no empty margin to sit in, so it rests at the end of the page instead of covering text. */
+@media (max-width: 1180px) {
+  .dog { position: static; display: block; width: 160px; margin: 56px 0 -40px auto; }
+}
+@media (max-width: 760px) { .dog { width: 130px; } }
+@media print { .dog { display: none; } }
