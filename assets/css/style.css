@@ -6,6 +6,7 @@
   --faint: #8f8f8f;
   --line: #e8e8e5;
   --accent: #1f5fbf;
+  --heading: #004CFF;
   --accent-soft: #edf2fa;
   --serif: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -62,7 +63,7 @@ p { margin: 0 0 1.1em; }
 .side-nav a.active { color: var(--text); }
 .side-nav a.active::before { content: "→ "; color: var(--accent); }
 
-.toc-title { font-family: var(--sans); font-weight: 600; font-size: 19px; margin: 0 0 14px; }
+.toc-title { font-family: var(--sans); font-weight: 600; font-size: 19px; color: var(--heading); margin: 0 0 14px; }
 .toc ol { margin: 0; padding-left: 1.4em; font-size: .95rem; line-height: 1.75; }
 .toc li::marker { color: var(--text); }
 .toc a { color: var(--faint); text-decoration: none; }
@@ -74,7 +75,7 @@ p { margin: 0 0 1.1em; }
 .subtitle { font-family: var(--sans); color: var(--muted); font-size: 1.05rem; margin: 0; }
 .subtitle a { text-decoration-color: #d0d0d0; }
 
-.content h2 { font-family: var(--sans); font-weight: 600; font-size: 19px; margin: 52px 0 18px; scroll-margin-top: 24px; }
+.content h2 { font-family: var(--sans); font-weight: 600; font-size: 19px; color: var(--heading); margin: 52px 0 18px; scroll-margin-top: 24px; }
 .content h3 { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; margin: 0 0 2px; }
 .content h4 { font-family: var(--sans); font-size: .85rem; font-weight: 700; color: var(--accent); margin: 24px 0 8px; }
 
