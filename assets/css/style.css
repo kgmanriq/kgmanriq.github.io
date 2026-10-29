@@ -196,7 +196,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Dog illustration (bottom-right corner) ---------- */
 .dog { position: fixed; bottom: 24px; width: 150px; height: auto; pointer-events: none; z-index: 1;
   /* Sit just right of the main column rather than out at the window edge. */
-  left: min(calc(50% + 374px), calc(100% - 294px)); }
+  left: min(calc(50% + 422px), calc(100% - 246px)); }
 /* Narrower screens: no empty margin to sit in, so it rests at the end of the page instead of covering text. */
 @media (max-width: 1180px) {
   .dog { position: static; display: block; width: 140px; margin: 56px 0 -40px auto; }
