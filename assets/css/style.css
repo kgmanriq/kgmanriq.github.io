@@ -189,6 +189,6 @@ p { margin: 0 0 1.1em; }
 @media (max-width: 760px) { .avatar { width: 84px; margin-bottom: 8px; } }
 
 /* ---------- Headline with drifting, magnifying letters ---------- */
-.mdr { line-height: 1.3; text-wrap: balance; }
+.page-head h1.mdr { line-height: 1.3; text-wrap: balance; letter-spacing: 0.05em; word-spacing: 0.15em; }
 .mdr .mdr-word { display: inline-block; white-space: nowrap; }
 .mdr .mdr-ch { display: inline-block; transform-origin: 50% 60%; will-change: transform; }
