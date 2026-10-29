@@ -5,9 +5,9 @@
   --muted: #666666;
   --faint: #8f8f8f;
   --line: #e8e8e5;
-  --accent: #1e4af5;
-  --heading: #1e4af5;
-  --accent-soft: #eaeffe;
+  --accent: #c22b26;
+  --heading: #c22b26;
+  --accent-soft: #fbeceb;
   --serif: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -93,7 +93,7 @@ p { margin: 0 0 1.1em; }
 /* ---------- Tiles ---------- */
 .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 8px; clear: none; }
 .tile { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; color: var(--text); transition: border-color .15s, transform .15s; }
-.tile:hover { color: var(--text); border-color: rgba(30, 74, 245, .5); transform: translateY(-2px); }
+.tile:hover { color: var(--text); border-color: rgba(194, 43, 38, .5); transform: translateY(-2px); }
 .tile-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
 .tile-body { padding: 14px 15px 16px; display: flex; flex-direction: column; flex: 1; }
 .tile-meta { font-family: var(--sans); font-size: .68rem; color: var(--faint); margin: 0 0 6px; }
